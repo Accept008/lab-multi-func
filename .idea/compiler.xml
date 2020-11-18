@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lab-multi-func" />
+        <module name="func-common" />
+        <module name="func-distribute" />
       </profile>
     </annotationProcessing>
   </component>
