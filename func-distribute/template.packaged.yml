@@ -10,6 +10,9 @@ Resources:
       Properties:
         Handler: 'com.qztc.fun.DistributeTask::handleRequest'
         Runtime: java8
-        CodeUri: './'
+        CodeUri: 'oss://soundbus-rd-function-repository/7a7f96be7daaaa81dc364eb031f2160c'
         Timeout: 600
         MemorySize: 512
+        EnvironmentVariables:
+          MONGO_URI: 'mongodb://用户名:密码@地址:端口/数据库'
+          MONGO_DATABASE: 数据库
