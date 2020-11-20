@@ -1,15 +1,19 @@
 ROSTemplateFormatVersion: '2015-09-01'
 Transform: 'Aliyun::Serverless-2018-04-03'
 Resources:
-  download-soniccodes-service:
+  lab-multi-service:
     Type: 'Aliyun::Serverless::Service'
     Properties:
-      Description: 声连码下载
-    sonicmoving-soniccode-task-distribute-func:
+      Description: 多模块函数
+    lab-distribute-func:
       Type: 'Aliyun::Serverless::Function'
       Properties:
-        Handler: 'cn.soundbus.platform.DistributeTask::handleRequest'
+        Handler: 'com.qztc.fun.DistributeTask::handleRequest'
         Runtime: java8
         CodeUri: './'
         Timeout: 600
         MemorySize: 512
+        EnvironmentVariables:
+          MONGO_URI: >-
+            mongodb://用户名:密码@地址:端口/数据库
+          MONGO_DATABASE: 数据库

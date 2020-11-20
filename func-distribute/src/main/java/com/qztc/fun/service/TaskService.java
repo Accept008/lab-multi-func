@@ -27,7 +27,7 @@ public class TaskService {
     public void saveManyTaskBatch(String description) {
         MongoCollection<Document> collection = mongoDao.getTaskBatchCollection(mongoClient);
         List<Document> documents = new ArrayList<Document>();
-        Document doc = new Document("_id", "1")
+        Document doc = new Document("_id", System.currentTimeMillis())
                 .append("taskId", "taskId01")
                 .append("accountId", "accountId01")
                 .append("createAt", new Date())
