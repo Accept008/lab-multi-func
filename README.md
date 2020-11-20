@@ -1,3 +1,5 @@
+*说明:*  template.yml用于fun build后fun local invoke的本地调试; template.packaged.yml用于fun build后fun package上传OSS
+
 `函数多环境部署`
 
     cd /home/chen/IdeaProjects/github/lab-multi-func/func-distribute
@@ -12,3 +14,4 @@
     cd /home/chen/IdeaProjects/github/lab-multi-func/func-distribute
     fun build    
     fun local invoke -d 3001  -e ./param.json lab-distribute-func     
+    
