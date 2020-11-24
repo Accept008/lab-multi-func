@@ -15,4 +15,8 @@
     cd /home/chen/IdeaProjects/github/lab-multi-func/func-distribute
     fun build    
     fun local invoke -d 3001  -e ./param.json lab-distribute-func     
-    
+
+ ![image](./doc/img/fun-build.png)   
+ ![image](./doc/img/fun-invoke-config.png)   
+ ![image](./doc/img/fun-invoke-exec.png)   
+ ![image](./doc/img/fun-invoke-run.png)       
