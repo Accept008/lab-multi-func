@@ -1,4 +1,5 @@
-*说明:*  template.yml用于fun build后fun local invoke的本地调试; template.packaged.yml用于fun build后fun package上传OSS
+*说明:*  文件`template.yml`用于fun build后fun local invoke的本地调试; fun build后执行fun package上传OSS时生成文件`template.packaged.yml`
+
 
 `函数多环境部署`
 
